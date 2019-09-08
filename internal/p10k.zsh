@@ -2211,7 +2211,7 @@ prompt_node_version() {
     _p9k_upglob package.json && return
   fi
   _p9k_cached_cmd_stdout node --version && [[ $_p9k__ret == v?* ]] || return
-  _p9k_prompt_segment "$0" "green" "white" 'NODE_ICON' 0 '' "${_p9k__ret#v}"
+  _p9k_prompt_segment "$0" "green" "022" 'NODE_ICON' 0 '' "${_p9k__ret#v}"
 }
 
 _p9k_prompt_node_version_init() {
